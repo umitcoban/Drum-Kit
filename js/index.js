@@ -17,13 +17,13 @@ function playDrumSet(drumType){
             audio.src = "sounds/tom-1.mp3";
             break;
             case "a":
-                audio.src = "sounds/tom-1.mp3";
+                audio.src = "sounds/tom-2.mp3";
                 break;
                 case "s":
-                    audio.src = "sounds/tom-1.mp3";
+                    audio.src = "sounds/tom-3.mp3";
                     break;
                     case "d":
-                        audio.src = "sounds/tom-1.mp3";
+                        audio.src = "sounds/tom-4.mp3";
                         break;
                         case "j":
                             audio.src = "sounds/tom-1.mp3";
