@@ -26,13 +26,13 @@ function playDrumSet(drumType){
                         audio.src = "sounds/tom-4.mp3";
                         break;
                         case "j":
-                            audio.src = "sounds/tom-1.mp3";
+                            audio.src = "sounds/snare.mp3";
                             break;
                             case "k":
-                                audio.src = "sounds/tom-1.mp3";
+                                audio.src = "sounds/crash.mp3";
                                 break;
                                 case "l":
-                                    audio.src = "sounds/tom-1.mp3";
+                                    audio.src = "sounds/kick-bass.mp3";
                                     break;
                                     default:
 
