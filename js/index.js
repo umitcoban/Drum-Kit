@@ -1,5 +1,10 @@
 var buttons = document.querySelectorAll(".drum");
 
+document.addEventListener("keydown", function(event){
+    playDrumSet(event.key.toLowerCase());
+    buttonAnimation(event.key.toLowerCase());
+});
+
 for(var i =0; i < buttons.length; i++){
     buttons[i].addEventListener("click",handleClick);
 }
@@ -8,6 +13,7 @@ function handleClick(){
     // var audio = new Audio("sounds/tom-1.mp3");
     // audio.play();
     playDrumSet(this.textContent);
+    buttonAnimation(this.textContent);
 }
 
 function playDrumSet(drumType){
@@ -40,3 +46,11 @@ function playDrumSet(drumType){
  
     audio.play();
 }
+
+function buttonAnimation(currentKey){
+    var button = document.querySelector("."+currentKey);
+    button.classList.add("pressed");
+    setTimeout(function(){
+        button.classList.remove("pressed");
+    },100);
+} 
